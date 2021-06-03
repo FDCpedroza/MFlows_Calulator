@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--this is main layout -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkGray"
+    tools:context=".MainActivity"
+    >
+
+    <!--layout for results-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingRight="30dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:text="1 + 1"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:id="@+id/workingTextView"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingRight="30dp"
+            android:textColor="@color/white"
+            android:text="2"
+            android:layout_gravity="end"
+            android:gravity="center_vertical"
+            android:textSize="30sp"
+            android:id="@+id/resultTextView"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--note: android:background is not working
+            so as alternative used app:backgroundTing-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/red"
+                android:text="C"
+                android:onClick="clearOnClick"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="bracketsOnClick"
+                android:text="()"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="powerOfOnclick"
+                android:text="^"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="divideOnClick"
+                android:text="/"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--note: android:background is not working
+            so as alternative used app:backgroundTing-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="sevenOnClick"
+                android:text="7"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="eightOnClick"
+                android:text="8"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="nineOnClick"
+                android:text="9"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/orange"
+                android:onClick="multiplyOnClick"
+                android:text="X"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--note: android:background is not working
+            so as alternative used app:backgroundTing-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="fourOnClick"
+                android:text="4"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="fiveOnClick"
+                android:text="5"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="sixOnClick"
+                android:text="6"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/orange"
+                android:onClick="subtractOnClick"
+                android:text="-"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--note: android:background is not working
+            so as alternative used app:backgroundTing-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="oneOnClick"
+                android:text="1"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="twoOnClick"
+                android:text="2"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="threeOnClick"
+                android:text="3"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/orange"
+                android:onClick="addOnClick"
+                android:text="+"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <!--note: android:background is not working
+            so as alternative used app:backgroundTing-->
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="periodOnClick"
+                android:text="."/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/calcButtonTextSize"
+                app:backgroundTint="@color/darkGray"
+                android:textColor="@color/white"
+                android:onClick="zeroOnClick"
+                android:text="0"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="35sp"
+                app:backgroundTint="@color/orange"
+                android:textColor="@color/white"
+                android:onClick="equalsOnClick"
+                android:text="="/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
